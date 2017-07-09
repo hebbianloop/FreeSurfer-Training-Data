@@ -1,4 +1,5 @@
 *~
+.gitignore~
 error.log
 fsaverage
 .DS_Store
