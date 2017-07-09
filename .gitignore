@@ -131,6 +131,8 @@ lh.w-g.pct.stats
 lh.white.H.K.touch
 lh.white.preaparc
 lh.white.preaparc.H
+lh.white.H
+lh.white.K
 lh.white.preaparc.K
 lh.white_surface.touch
 mri_nu_correct.mni.log
@@ -242,6 +244,8 @@ rh.white.preaparc
 rh.white.preaparc.H
 rh.white.preaparc.K
 rh.white_surface.touch
+rh.white.H
+rh.white.K
 rusage.mri_ca_register.dat
 rusage.mri_em_register.dat
 rusage.mri_em_register.skull.dat
