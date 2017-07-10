@@ -3,7 +3,7 @@
 error.log
 fsaverage
 .DS_Store
-00*.mgz
+00*_orig.mgz
 T1.orig.mgz
 T1.defaced.mgz
 BA_exvivo.ctab
