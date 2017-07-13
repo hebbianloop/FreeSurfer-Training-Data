@@ -394,3 +394,15 @@ status file for recon-all
 Fri Jul  7 15:17:51 EDT 2017
 #@# BA_exvivo Labels rh Fri Jul  7 15:17:51 EDT 2017
 recon-all -s sub-03 finished without error at Fri Jul  7 15:23:55 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Thu Jul 13 14:41:44 EDT 2017
+#@# MotionCor Thu Jul 13 14:41:44 EDT 2017
+#@# Talairach Thu Jul 13 14:41:55 EDT 2017
+#@# Talairach Failure Detection Thu Jul 13 14:43:24 EDT 2017
+#@# Nu Intensity Correction Thu Jul 13 14:43:24 EDT 2017
+#@# Intensity Normalization Thu Jul 13 14:45:07 EDT 2017
+#@# Skull Stripping Thu Jul 13 14:47:30 EDT 2017
+recon-all -s sub-03 finished without error at Thu Jul 13 14:47:58 EDT 2017

@@ -427,3 +427,38 @@ talairach_avi log file is transforms/talairach_avi.log...
 \n mris_label2annot --s sub-03 --hemi rh --ctab /Volumes/CFMI-CFS/opt/fs6/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose \n
 \n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.stats -b -a ./rh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-03 rh white \n
 \n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.thresh.stats -b -a ./rh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-03 rh white \n
+\n\n#---------------------------------
+# New invocation of recon-all Thu Jul 13 14:41:36 EDT 2017 
+#--------------------------------------------
+#@# MotionCor Thu Jul 13 14:41:44 EDT 2017
+\n cp /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig/001.mgz /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/rawavg.mgz \n
+\n mri_convert /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/rawavg.mgz /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz --conform \n
+\n mri_add_xform_to_header -c /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach.xfm /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz \n
+#--------------------------------------------
+#@# Talairach Thu Jul 13 14:41:55 EDT 2017
+\n mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50 \n
+\n talairach_avi --i orig_nu.mgz --xfm transforms/talairach.auto.xfm \n
+talairach_avi log file is transforms/talairach_avi.log...
+\nINFO: transforms/talairach.xfm already exists!
+The new transforms/talairach.auto.xfm will not be copied to transforms/talairach.xfm
+This is done to retain any edits made to transforms/talairach.xfm
+Add the -clean-tal flag to recon-all to overwrite transforms/talairach.xfm\n
+#--------------------------------------------
+#@# Talairach Failure Detection Thu Jul 13 14:43:24 EDT 2017
+\n talairach_afd -T 0.005 -xfm transforms/talairach.xfm \n
+\n awk -f /Volumes/CFMI-CFS/opt/fs6/bin/extract_talairach_avi_QA.awk /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach_avi.log \n
+\n tal_QC_AZS /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach_avi.log \n
+#--------------------------------------------
+#@# Nu Intensity Correction Thu Jul 13 14:43:24 EDT 2017
+\n mri_nu_correct.mni --i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2 \n
+\n mri_add_xform_to_header -c /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach.xfm nu.mgz nu.mgz \n
+#--------------------------------------------
+#@# Intensity Normalization Thu Jul 13 14:45:07 EDT 2017
+\n mri_normalize -g 1 -mprage nu.mgz T1.mgz \n
+#--------------------------------------------
+#@# Skull Stripping Thu Jul 13 14:47:30 EDT 2017
+\n mri_watershed -rusage /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/touch/rusage.mri_watershed.dat -keep brainmask.auto.mgz brainmask.mgz brainmask.mgz -T1 -brain_atlas /Volumes/CFMI-CFS/opt/fs6/average/RB_all_withskull_2016-05-10.vc700.gca transforms/talairach_with_skull.lta T1.mgz brainmask.auto.mgz \n
+\nINFO: brainmask.mgz already exists!
+The new brainmask.auto.mgz will not be copied to brainmask.mgz.
+This is done to retain any edits made to brainmask.mgz.
+Add the -clean-bm flag to recon-all to overwrite brainmask.mgz.\n

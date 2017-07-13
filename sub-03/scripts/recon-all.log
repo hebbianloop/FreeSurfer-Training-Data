@@ -10935,3 +10935,605 @@ Started at Fri Jul 7 15:17:51 EDT 2017
 Ended   at Fri Jul 7 15:23:55 EDT 2017
 #@#%# recon-all-run-time-hours 0.101
 recon-all -s sub-03 finished without error at Fri Jul  7 15:23:55 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+Thu Jul 13 14:41:37 EDT 2017
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03
+/Volumes/CFMI-CFS/opt/fs6/bin/recon-all
+-autorecon1 -s sub-03
+subjid sub-03
+setenv SUBJECTS_DIR /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data
+FREESURFER_HOME /Volumes/CFMI-CFS/opt/fs6
+Actual FREESURFER_HOME /Volumes/CFMI-CFS/opt/fs6
+build-stamp.txt: freesurfer-Darwin-OSX-stable-pub-v6.0.0-2beb96c
+Darwin trash-can.local 15.6.0 Darwin Kernel Version 15.6.0: Thu Jun 23 18:25:34 PDT 2016; root:xnu-3248.60.10~1/RELEASE_X86_64 x86_64 i386 MacPro6,1 Darwin
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    8192 kbytes
+coredumpsize 0 kbytes
+memoryuse    unlimited
+descriptors  4864 
+memorylocked unlimited
+maxproc      709 
+
+PhysMem: 45G used (4768M wired), 19G unused.
+
+########################################
+program versions used
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+$Id: mri_motion_correct.fsl,v 1.15 2016/02/16 17:17:20 zkaufman Exp $
+mri_convert.bin -all-info 
+ProgramName: mri_convert.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:37-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+FLIRT version 5.5
+$Id: talairach_avi,v 1.13 2015/12/23 04:25:17 greve Exp $
+mri_convert.bin --version 
+stable6
+ProgramName: tkregister2_cmdl  ProgramArguments: --all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:38-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: tkregister2.c,v 1.132.2.1 2016/08/02 21:17:29 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@gust.nmr.mgh.harvard.edu (x86_64-apple-darwin11.4.2) on 2015-06-19 at 15:37:08
+ProgramName: mri_make_uchar  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:38-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_make_uchar.c,v 1.4 2011/03/02 00:04:14 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:38-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_normalize.c,v 1.88.2.3 2016/12/27 16:47:13 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_watershed  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:39-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_watershed.cpp,v 1.103 2016/06/17 18:00:49 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_gcut  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:39-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_gcut.cpp,v 1.14 2011/03/02 00:04:16 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segment  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:39-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_segment.c,v 1.43.2.1 2016/10/27 22:24:52 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_label2label.bin  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:39-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_label2label.c,v 1.48.2.2 2016/12/12 14:15:26 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_em_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:39-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_em_register.c,v 1.105.2.1 2016/10/27 22:25:10 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:40-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_ca_normalize.c,v 1.67.2.2 2016/10/27 22:25:09 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:40-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_ca_register.c,v 1.96.2.3 2016/10/27 22:25:10 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:40-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_ca_label.c,v 1.113.2.2 2016/10/27 22:25:10 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_pretess  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:40-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_pretess.c,v 1.22 2013/08/30 18:12:25 mreuter Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fill  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:40-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_fill.c,v 1.119 2011/10/25 14:09:58 fischl Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_tessellate  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:40-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_tessellate.c,v 1.38.2.1 2016/07/26 18:46:38 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_concatenate_lta.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:41-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_concatenate_lta.c,v 1.16 2015/11/21 00:06:20 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize_tp2  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:41-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_normalize_tp2.c,v 1.8 2011/03/02 00:04:23 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_smooth  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:41-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_smooth.c,v 1.30 2014/01/21 18:48:21 fischl Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_inflate  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:41-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_inflate.c,v 1.45 2016/01/20 23:42:15 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:41-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_curvature.c,v 1.31 2011/03/02 00:04:30 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_sphere  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:41-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_fix_topology  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:42-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_fix_topology.c,v 1.50.2.1 2016/10/27 22:25:58 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_topo_fixer  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:42-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_topo_fixer.cpp,v 1.29 2011/03/02 00:04:34 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:42-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_euler_number  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:42-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_euler_number.c,v 1.10 2013/01/14 22:39:14 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_make_surfaces  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:42-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_register  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:42-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_register.c,v 1.63 2016/01/20 23:43:04 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_volmask  ProgramArguments: --all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/13-18:41:43-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_volmask.cpp,v 1.26.2.2 2016/11/18 20:05:18 zkaufman Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_anatomical_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:43-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_anatomical_stats.c,v 1.79 2016/03/14 15:15:34 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mrisp_paint  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:43-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mrisp_paint.c,v 1.12 2016/03/22 14:47:57 fischl Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:43-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_curvature_stats.c,v 1.65 2015/06/04 20:50:51 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_calc  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:43-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_calc.c,v 1.54.2.1 2016/09/27 18:51:28 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $
+
+ProgramName: mri_robust_register.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:43-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $
+
+ProgramName: mri_robust_template  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:44-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_and  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:44-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_and.c,v 1.4 2011/03/02 00:04:13 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_or  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:44-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_or.c,v 1.5 2013/03/20 15:03:29 lzollei Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fuse_segmentations  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:44-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_fuse_segmentations.c,v 1.8 2011/03/02 00:04:15 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segstats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:44-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_relabel_hypointensities  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/13-18:41:44-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_relabel_hypointensities.c,v 1.13 2015/05/15 18:44:10 nicks Exp $  User: shad  Machine: trash-can.local  Platform: Darwin  PlatformVersion: 15.6.0  CompilerName: GCC  CompilerVersion: 40400 
+#######################################
+GCADIR /Volumes/CFMI-CFS/opt/fs6/average
+GCA RB_all_2016-05-10.vc700.gca
+GCASkull RB_all_withskull_2016-05-10.vc700.gca
+AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
+GCSDIR /Volumes/CFMI-CFS/opt/fs6/average
+GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
+#######################################
+#--------------------------------------------
+#@# MotionCor Thu Jul 13 14:41:44 EDT 2017
+Found 1 runs
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig/001.mgz
+Checking for (invalid) multi-frame inputs...
+WARNING: only one run found. This is OK, but motion
+correction cannot be performed on one run, so I'll
+copy the run to rawavg and continue.
+\n cp /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig/001.mgz /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/rawavg.mgz \n
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03
+\n mri_convert /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/rawavg.mgz /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz --conform \n
+mri_convert.bin /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/rawavg.mgz /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz --conform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/rawavg.mgz...
+TR=1900.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+Reslicing using trilinear interpolation 
+writing to /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz...
+\n mri_add_xform_to_header -c /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach.xfm /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/orig.mgz \n
+INFO: extension is mgz
+#--------------------------------------------
+#@# Talairach Thu Jul 13 14:41:55 EDT 2017
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+\n mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50 \n
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+/Volumes/CFMI-CFS/opt/fs6/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50
+nIters 1
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+Darwin trash-can.local 15.6.0 Darwin Kernel Version 15.6.0: Thu Jun 23 18:25:34 PDT 2016; root:xnu-3248.60.10~1/RELEASE_X86_64 x86_64 i386 MacPro6,1 Darwin
+Thu Jul 13 14:41:55 EDT 2017
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@gust.nmr.mgh.harvard.edu (x86_64-apple-darwin11.4.2) on 2015-06-19 at 15:37:08
+/usr/bin/bc
+tmpdir is ./tmp.mri_nu_correct.mni.95820
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.95820/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.95820/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=1900.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.95820/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Thu Jul 13 14:41:57 EDT 2017
+nu_correct -clobber ./tmp.mri_nu_correct.mni.95820/nu0.mnc ./tmp.mri_nu_correct.mni.95820/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.95820/0/ -iterations 1000 -distance 50
+[shad@trash-can.local:/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/] [2017-07-13 14:41:57] running:
+  /Volumes/CFMI-CFS/opt/fs6/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 1000 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 50 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.95820/0/ ./tmp.mri_nu_correct.mni.95820/nu0.mnc ./tmp.mri_nu_correct.mni.95820/nu1.imp
+
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Number of iterations: 45 
+CV of field change: 0.000977563
+ 
+ 
+ 
+mri_convert ./tmp.mri_nu_correct.mni.95820/nu1.mnc orig_nu.mgz --like orig.mgz --conform
+mri_convert.bin ./tmp.mri_nu_correct.mni.95820/nu1.mnc orig_nu.mgz --like orig.mgz --conform 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.95820/nu1.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+changing data type from float to uchar (noscale = 0)...
+MRIchangeType: Building histogram 
+writing to orig_nu.mgz...
+ 
+ 
+Thu Jul 13 14:42:56 EDT 2017
+mri_nu_correct.mni done
+\n talairach_avi --i orig_nu.mgz --xfm transforms/talairach.auto.xfm \n
+talairach_avi log file is transforms/talairach_avi.log...
+Started at Thu Jul 13 14:42:56 EDT 2017
+Ended   at Thu Jul 13 14:43:24 EDT 2017
+talairach_avi done
+\nINFO: transforms/talairach.xfm already exists!
+The new transforms/talairach.auto.xfm will not be copied to transforms/talairach.xfm
+This is done to retain any edits made to transforms/talairach.xfm
+Add the -clean-tal flag to recon-all to overwrite transforms/talairach.xfm\n
+#--------------------------------------------
+#@# Talairach Failure Detection Thu Jul 13 14:43:24 EDT 2017
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+\n talairach_afd -T 0.005 -xfm transforms/talairach.xfm \n
+talairach_afd: Talairach Transform: transforms/talairach.xfm OK (p=0.5988, pval=0.2817 >= threshold=0.0050)
+\n awk -f /Volumes/CFMI-CFS/opt/fs6/bin/extract_talairach_avi_QA.awk /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach_avi.log \n
+\n tal_QC_AZS /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach_avi.log \n
+TalAviQA: 0.98059
+z-score: 0
+#--------------------------------------------
+#@# Nu Intensity Correction Thu Jul 13 14:43:24 EDT 2017
+\n mri_nu_correct.mni --i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2 \n
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+/Volumes/CFMI-CFS/opt/fs6/bin/mri_nu_correct.mni
+--i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2
+nIters 2
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+Darwin trash-can.local 15.6.0 Darwin Kernel Version 15.6.0: Thu Jun 23 18:25:34 PDT 2016; root:xnu-3248.60.10~1/RELEASE_X86_64 x86_64 i386 MacPro6,1 Darwin
+Thu Jul 13 14:43:25 EDT 2017
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@gust.nmr.mgh.harvard.edu (x86_64-apple-darwin11.4.2) on 2015-06-19 at 15:37:08
+/usr/bin/bc
+tmpdir is ./tmp.mri_nu_correct.mni.96697
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+mri_convert orig.mgz ./tmp.mri_nu_correct.mni.96697/nu0.mnc -odt float
+mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.96697/nu0.mnc -odt float 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from orig.mgz...
+TR=1900.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+changing data type from uchar to float (noscale = 0)...
+writing to ./tmp.mri_nu_correct.mni.96697/nu0.mnc...
+ 
+--------------------------------------------------------
+Iteration 1 Thu Jul 13 14:43:27 EDT 2017
+nu_correct -clobber ./tmp.mri_nu_correct.mni.96697/nu0.mnc ./tmp.mri_nu_correct.mni.96697/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.96697/0/
+[shad@trash-can.local:/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/] [2017-07-13 14:43:27] running:
+  /Volumes/CFMI-CFS/opt/fs6/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.96697/0/ ./tmp.mri_nu_correct.mni.96697/nu0.mnc ./tmp.mri_nu_correct.mni.96697/nu1.imp
+
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Number of iterations: 45 
+CV of field change: 0.000990548
+ 
+ 
+--------------------------------------------------------
+Iteration 2 Thu Jul 13 14:44:06 EDT 2017
+nu_correct -clobber ./tmp.mri_nu_correct.mni.96697/nu1.mnc ./tmp.mri_nu_correct.mni.96697/nu2.mnc -tmpdir ./tmp.mri_nu_correct.mni.96697/1/
+[shad@trash-can.local:/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/] [2017-07-13 14:44:06] running:
+  /Volumes/CFMI-CFS/opt/fs6/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.96697/1/ ./tmp.mri_nu_correct.mni.96697/nu1.mnc ./tmp.mri_nu_correct.mni.96697/nu2.imp
+
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Processing:.................................................................Done
+Number of iterations: 16 
+CV of field change: 0.000993661
+ 
+ 
+ 
+mri_binarize --i ./tmp.mri_nu_correct.mni.96697/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.96697/ones.mgz
+
+$Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
+cwd /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+cmdline mri_binarize.bin --i ./tmp.mri_nu_correct.mni.96697/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.96697/ones.mgz 
+sysname  Darwin
+hostname trash-can.local
+machine  x86_64
+user     shad
+
+input      ./tmp.mri_nu_correct.mni.96697/nu2.mnc
+frame      0
+nErode3d   0
+nErode2d   0
+output     ./tmp.mri_nu_correct.mni.96697/ones.mgz
+Binarizing based on threshold
+min        -1
+max        +infinity
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Found 16777216 values in range
+Counting number of voxels in first frame
+Found 16777216 voxels in final mask
+Count: 16777216 16777216.000000 16777216 100.000000
+mri_binarize done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.96697/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.96697/sum.junk --avgwf ./tmp.mri_nu_correct.mni.96697/input.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.96697/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.96697/sum.junk --avgwf ./tmp.mri_nu_correct.mni.96697/input.mean.dat 
+sysname  Darwin
+hostname trash-can.local
+machine  x86_64
+user     shad
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.96697/ones.mgz
+Loading orig.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.96697/input.mean.dat
+mri_segstats done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.96697/ones.mgz --i ./tmp.mri_nu_correct.mni.96697/nu2.mnc --sum ./tmp.mri_nu_correct.mni.96697/sum.junk --avgwf ./tmp.mri_nu_correct.mni.96697/output.mean.dat
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.96697/ones.mgz --i ./tmp.mri_nu_correct.mni.96697/nu2.mnc --sum ./tmp.mri_nu_correct.mni.96697/sum.junk --avgwf ./tmp.mri_nu_correct.mni.96697/output.mean.dat 
+sysname  Darwin
+hostname trash-can.local
+machine  x86_64
+user     shad
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.96697/ones.mgz
+Loading ./tmp.mri_nu_correct.mni.96697/nu2.mnc
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+  0
+Writing to ./tmp.mri_nu_correct.mni.96697/output.mean.dat
+mri_segstats done
+mris_calc -o ./tmp.mri_nu_correct.mni.96697/nu2.mnc ./tmp.mri_nu_correct.mni.96697/nu2.mnc mul 1.00511494720054502663
+Saving result to './tmp.mri_nu_correct.mni.96697/nu2.mnc' (type = MINC )                       [ ok ]
+mri_convert ./tmp.mri_nu_correct.mni.96697/nu2.mnc nu.mgz --like orig.mgz
+mri_convert.bin ./tmp.mri_nu_correct.mni.96697/nu2.mnc nu.mgz --like orig.mgz 
+$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
+reading from ./tmp.mri_nu_correct.mni.96697/nu2.mnc...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to nu.mgz...
+mri_make_uchar nu.mgz transforms/talairach.xfm nu.mgz
+type change took 0 minutes and 8 seconds.
+mapping ( 7, 106) to ( 3, 110)
+ 
+ 
+Thu Jul 13 14:45:07 EDT 2017
+mri_nu_correct.mni done
+\n mri_add_xform_to_header -c /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri/transforms/talairach.xfm nu.mgz nu.mgz \n
+INFO: extension is mgz
+#--------------------------------------------
+#@# Intensity Normalization Thu Jul 13 14:45:07 EDT 2017
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+\n mri_normalize -g 1 -mprage nu.mgz T1.mgz \n
+using max gradient = 1.000
+assuming input volume is MGH (Van der Kouwe) MP-RAGE
+reading from nu.mgz...
+normalizing image...
+talairach transform
+ 1.08078  -0.18967   0.10396   10.00011;
+ 0.13844   1.00878   0.20107  -44.93961;
+-0.12286  -0.11308   1.12473  -7.80377;
+ 0.00000   0.00000   0.00000   1.00000;
+processing without aseg, no1d=0
+MRInormInit(): 
+INFO: Modifying talairach volume c_(r,a,s) based on average_305
+MRInormalize(): 
+MRIsplineNormalize(): npeaks = 20
+Starting OpenSpline(): npoints = 20
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+
+Iterating 2 times
+---------------------------------
+3d normalization pass 1 of 2
+white matter peak found at 110
+white matter peak found at 110
+gm peak at 78 (78), valley at 56 (56)
+csf peak at 39, setting threshold to 65
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+---------------------------------
+3d normalization pass 2 of 2
+white matter peak found at 110
+white matter peak found at 110
+gm peak at 78 (78), valley at 23 (23)
+csf peak at 40, setting threshold to 65
+building Voronoi diagram...
+performing soap bubble smoothing, sigma = 8...
+Done iterating ---------------------------------
+writing output to T1.mgz
+3D bias adjustment took 2 minutes and 22 seconds.
+#--------------------------------------------
+#@# Skull Stripping Thu Jul 13 14:47:30 EDT 2017
+/Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/mri
+\n mri_watershed -rusage /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-03/touch/rusage.mri_watershed.dat -keep brainmask.auto.mgz brainmask.mgz brainmask.mgz -T1 -brain_atlas /Volumes/CFMI-CFS/opt/fs6/average/RB_all_withskull_2016-05-10.vc700.gca transforms/talairach_with_skull.lta T1.mgz brainmask.auto.mgz \n
+
+Keeping brain edits brainmask.auto.mgz brainmask.mgz
+Mode:          T1 normalized volume
+Mode:          Use the information of atlas (default parms, --help for details)
+
+*********************************************************
+The input file is T1.mgz
+The output file is brainmask.auto.mgz
+Weighting the input with atlas information before watershed
+
+*************************WATERSHED**************************
+Sorting...
+      first estimation of the COG coord: x=131 y=104 z=98 r=88
+      first estimation of the main basin volume: 2915492 voxels
+      Looking for seedpoints 
+        2 found in the cerebellum 
+        17 found in the rest of the brain 
+      global maximum in x=109, y=99, z=56, Imax=255
+      CSF=19, WM_intensity=110, WM_VARIANCE=5
+      WM_MIN=110, WM_HALF_MIN=110, WM_HALF_MAX=110, WM_MAX=110 
+      preflooding height equal to 10 percent
+done.
+Analyze...
+
+      main basin size=2673185796954498 voxels, voxel volume =1.000 
+                     = 2673185796954498 mmm3 = 2673185765982.208 cm3
+done.
+PostAnalyze...Basin Prior
+ 5 basins merged thanks to atlas 
+      ***** 0 basin(s) merged in 1 iteration(s)
+      ***** 0 voxel(s) added to the main basin
+done.
+Weighting the input with prior template 
+
+****************TEMPLATE DEFORMATION****************
+
+      second estimation of the COG coord: x=132,y=106, z=93, r=9956 iterations
+^^^^^^^^ couldn't find WM with original limits - expanding ^^^^^^
+
+   GLOBAL      CSF_MIN=1, CSF_intensity=2, CSF_MAX=62 , nb = 44667
+  RIGHT_CER    CSF_MIN=1, CSF_intensity=2, CSF_MAX=5 , nb = -1064903441
+  LEFT_CER     CSF_MIN=1, CSF_intensity=2, CSF_MAX=16 , nb = 1102661213
+ RIGHT_BRAIN   CSF_MIN=1, CSF_intensity=2, CSF_MAX=72 , nb = -1035809544
+ LEFT_BRAIN    CSF_MIN=1, CSF_intensity=2, CSF_MAX=63 , nb = 18766
+    OTHER      CSF_MIN=2, CSF_intensity=25, CSF_MAX=51 , nb = 1091568444
+ Problem with the least square interpolation in GM_MIN calculation.
+ Problem with the least square interpolation in GM_MIN calculation.
+ (2) Problem with the least square interpolation in GM_MIN calculation.
+   
+                     CSF_MAX  TRANSITION  GM_MIN  GM
+    GLOBAL     
+  before analyzing :    62,      52,        49,   73
+  after  analyzing :    35,      52,        52,   57
+   RIGHT_CER   
+  before analyzing :    5,      10,        51,   73
+  after  analyzing :    5,      37,        51,   46
+   LEFT_CER    
+  before analyzing :    16,      25,        45,   75
+  after  analyzing :    16,      38,        45,   47
+  RIGHT_BRAIN  
+  before analyzing :    72,      54,        48,   73
+  after  analyzing :    37,      54,        54,   58
+  LEFT_BRAIN   
+  before analyzing :    63,      52,        49,   72
+  after  analyzing :    37,      52,        52,   57
+     OTHER     
+  before analyzing :    51,      4,        0,   2
+  after  analyzing :    4,      18,        25,   19
+      mri_strip_skull: done peeling brain
+      highly tesselated surface with 10242 vertices
+      matching...58 iterations
+
+*********************VALIDATION*********************
+curvature mean = -0.013, std = 0.009
+curvature mean = 70.017, std = 6.782
+
+No Rigid alignment: -atlas Mode Off (basic atlas / no registration)
+      before rotation: sse = 3.36, sigma = 5.22
+      after  rotation: sse = 3.36, sigma = 5.22
+Localization of inacurate regions: Erosion-Dilation steps
+      the sse mean is  3.55, its var is  4.62   
+      before Erosion-Dilatation  0.70% of inacurate vertices
+      after  Erosion-Dilatation  0.00% of inacurate vertices
+      Validation of the shape of the surface done.
+Scaling of atlas fields onto current surface fields
+
+********FINAL ITERATIVE TEMPLATE DEFORMATION********
+Compute Local values csf/gray
+Fine Segmentation...48 iterations
+
+      mri_strip_skull: done peeling brain
+
+Brain Size = 1661944 voxels, voxel volume = 1.000 mm3
+           = 1661944 mmm3 = 1661.944 cm3
+
+
+******************************
+Saving brainmask.auto.mgz
+Keeping edits ...
+Saving kept edits to brainmask.mgz .....
+done
+mri_watershed utimesec    26.625529
+mri_watershed stimesec    0.448150
+mri_watershed ru_maxrss   840740864
+mri_watershed ru_ixrss    0
+mri_watershed ru_idrss    0
+mri_watershed ru_isrss    0
+mri_watershed ru_minflt   205322
+mri_watershed ru_majflt   158
+mri_watershed ru_nswap    0
+mri_watershed ru_inblock  3
+mri_watershed ru_oublock  3
+mri_watershed ru_msgsnd   0
+mri_watershed ru_msgrcv   0
+mri_watershed ru_nsignals 0
+mri_watershed ru_nvcsw    23
+mri_watershed ru_nivcsw   290
+mri_watershed done
+\nINFO: brainmask.mgz already exists!
+The new brainmask.auto.mgz will not be copied to brainmask.mgz.
+This is done to retain any edits made to brainmask.mgz.
+Add the -clean-bm flag to recon-all to overwrite brainmask.mgz.\n
+
+Started at Thu Jul 13 14:41:36 EDT 2017 
+Ended   at Thu Jul 13 14:47:58 EDT 2017
+#@#%# recon-all-run-time-hours 0.106
+recon-all -s sub-03 finished without error at Thu Jul 13 14:47:58 EDT 2017
